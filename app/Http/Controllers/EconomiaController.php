@@ -56,7 +56,7 @@ class EconomiaController extends Controller
     }
 
     public function form(Request $request){
-        $moedaOrigem = $request->input('moedaOrigem');
+        $moedaOrigem = $request->input('moedaOrigem', 'BRL');
         $moedaDestino = $request->input('moedaDestino');
         $valorCompra = $request->input('valor');
         $tipoPagamento = $request->input('pagamento');
